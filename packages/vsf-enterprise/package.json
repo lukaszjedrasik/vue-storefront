@@ -1,0 +1,19 @@
+{
+  "name": "vsf-enterprise",
+  "private": true,
+  "version": "0.0.1",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.2",
+    "rollup": "^1.25.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "ts-jest": "^26.4.1",
+    "typescript": "^3.6.4"
+  },
+  "workspaces": {
+    "packages": [
+      "commercetools/*"
+    ]
+  }
+}

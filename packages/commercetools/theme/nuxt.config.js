@@ -43,6 +43,13 @@ export default {
   },
   buildModules: [
     // to core
+    ['@vsf-enterprise/storyblok/nuxt', {
+      accessToken: 'HW4jpKsyAMA7Kl4Y4RVBhQtt',
+      cache: {
+        clear: 'auto',
+        type: 'memory'
+      }
+    }],
     '@nuxt/typescript-build',
     '@nuxtjs/style-resources',
     // to core soon
@@ -52,11 +59,13 @@ export default {
       useRawSource: {
         dev: [
           '@vue-storefront/commercetools',
-          '@vue-storefront/core'
+          '@vue-storefront/core',
+          '@vsf-enterprise/storyblok'
         ],
         prod: [
           '@vue-storefront/commercetools',
-          '@vue-storefront/core'
+          '@vue-storefront/core',
+          '@vsf-enterprise/storyblok'
         ]
       }
     }],

@@ -1,0 +1,22 @@
+{
+  "name": "@vsf-enterprise/ct-customer-groups",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "scripts": {
+    "build": "rimraf lib && rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@vue-storefront/core": "^2.0.11",
+    "@vue-storefront/commercetools-api": "^0.2.7",
+    "graphql-tag": "^2.10.1"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@vsf-enterprise/storyblok",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue-storefront/core": "2.0.12-lc.16",
+    "axios": "^0.20.0",
+    "rollup": "^2.32.0",
+    "storyblok-js-client": "^3.2.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-typescript2": "^0.24.3"
+  }
+}

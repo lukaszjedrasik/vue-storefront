@@ -1,0 +1,28 @@
+{
+  "name": "@vsf-enterprise/ct-faceting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@commercetools/api-request-builder": "^5.6.3",
+    "@commercetools/sdk-client": "^2.1.2",
+    "@commercetools/sdk-middleware-auth": "^6.1.4",
+    "@commercetools/sdk-middleware-http": "^6.0.8"
+  },
+  "peerDependencies": {
+    "@vue-storefront/core": "2.0.12-lc.16",
+    "@vue-storefront/commercetools-api": "0.2.7-lc.16"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
