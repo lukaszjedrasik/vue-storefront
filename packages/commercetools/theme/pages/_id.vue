@@ -2,7 +2,7 @@
   <div>
     <render-content
       v-if="content"
-      v-for="(block, index) in content"
+      v-for="(block, index) in content.content.body"
       :key="index"
       :content="block"
       class="content-block"

@@ -1,9 +1,7 @@
 import { setup } from '@vsf-enterprise/storyblok';
 
-export default (options) => {
-  setup({
-    ...<%= serialize({
-      ...options
-    }) %>
-  })
+const options = <%= serialize(options) %>;
+
+export default () => {
+  setup(options);
 }
